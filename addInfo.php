@@ -149,23 +149,23 @@
 					echo"
 					<form action='" . htmlspecialchars($_SERVER['PHP_SELF']). "' method='post' enctype='multipart/form-data'>
 						<label for='studentID'>Student ID:</label>
-						<input type='text' id='studentID' name='studentID' pattern='[A-Za-z0-9]{5,}' title='Must be letters or numbers and at least 5 characters' value ='" . $id . "'><br>
+						<input type='text' id='studentID' name='studentID' pattern='[A-Za-z0-9]{5,}' title='Must be letters or numbers and at least 5 characters' value ='" . $id . "' required><br>
 						<label for='phoneNum'>Phone Number:</label>
-						<input type='text' id='phoneNum' name='phoneNum' pattern='[0-9]{9,}' title='Must be only numbers and at least 9 characters' value ='" . $phone . "'><br>
+						<input type='text' id='phoneNum' name='phoneNum' pattern='[0-9]{9,}' title='Must be only numbers and at least 9 characters' value ='" . $phone . "' required><br>
 						<label for='email'>Email:</label>
-						<input type='email' id='email' name='email' pattern='.{,256}' value ='" . $email . "'><br>
+						<input type='email' id='email' name='email' pattern='.{,256}' value ='" . $email . "' required><br>
 						<label for='dob'>Date of Birth:</label>
-						<input type='date' id='dob' name='dob' value ='" . $dob . "'><br>
+						<input type='date' id='dob' name='dob' value ='" . $dob . "' required><br>
 						<label for='medCon'>Medical Conditions:</label>
 						<input type='text' id='medCon' name='medCon' pattern=.{0,255} value ='" . $medCondition . "'><br>
 						<label for='docName'>Doctor Name:</label>
-						<input type='text' id='docName' name='docName' pattern=[A-Za-z\s]{5,256} value ='" . $docName . "'><br>
+						<input type='text' id='docName' name='docName' pattern=[A-Za-z\s]{5,256} value ='" . $docName . "' required><br>
 						<label for='docPhone'>Doctor Phone Number:</label>
-						<input type='text' id='docPhone' name='docPhone' pattern=[0-9]{9,256} value ='" . $docPhone . "'><br>
+						<input type='text' id='docPhone' name='docPhone' pattern=[0-9]{9,256} value ='" . $docPhone . "' required><br>
 						<label for='nokName'>Next of Kin Name:</label>
-						<input type='text' id='nokName' name='nokName' pattern=[A-Za-z\s]{5,256} value ='" . $nokName . "'><br>
+						<input type='text' id='nokName' name='nokName' pattern=[A-Za-z\s]{5,256} value ='" . $nokName . "' required><br>
 						<label for='nokPhone'>Next of Kin Phone Number:</label>
-						<input type='text' id='nokPhone' name='nokPhone' pattern=[0-9]{9,256} value ='" . $nokPhone . "'><br>
+						<input type='text' id='nokPhone' name='nokPhone' pattern=[0-9]{9,256} value ='" . $nokPhone . "' required><br>
 						<label for='photo'>Photo:</label>
 						<input type='file' id='photoUp' name='photoUp'><br>
 						Current photo:<br>
@@ -183,25 +183,25 @@
 				echo"
 				<form action='" . htmlspecialchars($_SERVER['PHP_SELF']). "' method='post' enctype='multipart/form-data'>
 					<label for='studentID'>Student ID:</label>
-					<input type='text' id='studentID' name='studentID' pattern='[A-Za-z0-9]{5,}' title='Must be letters or numbers and at least 5 characters'><br>
+					<input type='text' id='studentID' name='studentID' pattern='[A-Za-z0-9]{5,}' title='Must be letters or numbers and at least 5 characters' required><br>
 					<label for='phoneNum'>Phone Number:</label>
-					<input type='text' id='phoneNum' name='phoneNum' pattern='[0-9]{9,}' title='Must be only numbers and at least 9 characters'><br>
+					<input type='text' id='phoneNum' name='phoneNum' pattern='[0-9]{9,}' title='Must be only numbers and at least 9 characters' required><br>
 					<label for='email'>Email:</label>
-					<input type='email' id='email' name='email' pattern='.{,256}'><br>
+					<input type='email' id='email' name='email' pattern='.{,256}' required><br>
 					<label for='dob'>Date of Birth:</label>
 					<input type='date' id='dob' name='dob'><br>
 					<label for='medCon'>Medical Conditions:</label>
 					<input type='text' id='medCon' name='medCon' pattern=.{0,256}><br>
 					<label for='docName'>Doctor Name:</label>
-					<input type='text' id='docName' name='docName' pattern=[A-Za-z\s]{5,256}><br>
+					<input type='text' id='docName' name='docName' pattern=[A-Za-z\s]{5,256} required><br>
 					<label for='docPhone'>Doctor Phone Number:</label>
-					<input type='text' id='docPhone' name='docPhone' pattern=[0-9]{9,256}><br>
+					<input type='text' id='docPhone' name='docPhone' pattern=[0-9]{9,256} required><br>
 					<label for='nokName'>Next of Kin Name:</label>
-					<input type='text' id='nokName' name='nokName' pattern=[A-Za-z\s]{5,256}><br>
+					<input type='text' id='nokName' name='nokName' pattern=[A-Za-z\s]{5,256} required><br>
 					<label for='nokPhone'>Next of Kin Phone Number:</label>
-					<input type='text' id='nokPhone' name='nokPhone' pattern=[0-9]{9,256}><br>
+					<input type='text' id='nokPhone' name='nokPhone' pattern=[0-9]{9,256} required><br>
 					<label for='photo'>Photo:</label>
-					<input type='file' id='photoUp' name='photoUp'><br>
+					<input type='file' id='photoUp' name='photoUp' required><br>
 					<input type='submit' value='Submit'>
 				</form>";
 			}

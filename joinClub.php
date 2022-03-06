@@ -71,7 +71,6 @@
 	}
 	echo $err;
 	echo '<br><a href="main.php"><button type=button>Return to Main Page</button></a>';
-	$state->close();
 	$con->close();
 ?>
 <html>
